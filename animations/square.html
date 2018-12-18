@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-left: 200px;
+            /* stan poczatkowy*/
+            animation: move 5s 3s 2 linear alternate both;
+            /*dzieki opcji both animacjan ie wraca do stanu poczatkowego */
+            /* animation-direction: alternate; */
+            /* animation-delay: 10s; */
+            /* animation-name: move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        @keyframes move {
+            0% {
+                background-color: blue;
+                margin-left: 0;
+            }
+
+            50% {}
+
+            100% {
+                margin-left: calc(100% - 200px);
+                background-color: orange;
+            }
+        }
+
+        /* @keyframes move {
+            0% {
+                margin-left: 0;
+                background-color: red;
+            }
+
+            10% {
+                background-color: green;
+            }
+
+            30% {
+                margin-left: calc(100% - 200px);
+            }
+
+            50% {
+                margin-left: calc(100% - 200px);
+                background-color: blue;
+            }
+
+            80% {
+                margin-left: 0;
+            }
+
+            90% {
+                background-color: orchid;
+            }
+
+            100% {
+                margin-left: 0;
+            }
+        } */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
