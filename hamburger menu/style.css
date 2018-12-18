@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 150vh;
+}
+
+article {
+    margin: 30px 40px 10px 40px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: justify;
+
+}
+
+.arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    font-size: 40px;
+    transition: .2s linear;
+
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow.on {
+    transform: rotate(180deg);
+    bottom: 230px;
+}
+
+nav {
+    position: fixed;
+    bottom: -170px;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    transition: .2s linear;
+}
+
+nav.on {
+    bottom: 0;
+}
