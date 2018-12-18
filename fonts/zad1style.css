@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+
+html {
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 5vh;
+}
+
+p {
+    text-align: center;
+    line-height: 100vh;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}

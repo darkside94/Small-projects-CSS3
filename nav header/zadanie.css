@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    height: 40vh;
+    background-image: url(pier-1467984_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+
+    background-color: #333;
+    padding-left: 20px;
+    border-bottom: 4px solid royalblue;
+
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+
+    text-decoration: none;
+    padding: 20px 30px;
+    font-family: 'Roboto',
+        sans-serif;
+
+}
+
+nav a:hover {
+    color: orange;
+
+}
