@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            position: absolute;
+            top: 10vh;
+            left: 10vw;
+            padding: 20px 25px;
+            text-align: center;
+            font-family: arial;
+            color: white;
+            background-color: darkred;
+            cursor: pointer;
+        }
+
+        div {
+            position: absolute;
+            top: 90%;
+            left: 10%;
+            width: 0;
+            height: 0;
+            background-color: darkred;
+            transition: 1s;
+        }
+
+        div:nth-of-type(2) {
+            transition-delay: 0.2s;
+        }
+
+        div:nth-of-type(3) {
+            transition-delay: 0.4s;
+        }
+
+        div:nth-of-type(4) {
+            transition-delay: 0.6s;
+        }
+
+        div:nth-of-type(5) {
+            transition-delay: 0.8s;
+        }
+
+        div:nth-of-type(6) {
+            transition-delay: 0.8s;
+        }
+
+        span:hover~div:nth-of-type(1) {
+            top: 50%;
+            left: 50%;
+            width: 50vh;
+            height: 30vh;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        span:hover~div:nth-of-type(2) {
+            top: calc(50% - 15vh);
+            left: 50%;
+            width: calc(50vh/1.41);
+            height: calc(50vh/1.41);
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: black;
+
+        }
+
+        span:hover~div:nth-of-type(3) {
+            top: calc(50% + 7.5vh);
+            left: 50%;
+            width: 10vh;
+            height: 15vh;
+            transform: translate(-50%, -50%);
+            background-color: grey;
+            z-index: 2;
+        }
+
+        span:hover~div:nth-of-type(4) {
+            top: calc(50% - 25vh);
+            left: calc(50% + 15vh);
+            width: 5vh;
+            height: 10vh;
+            transform: translate(-50%, -50%);
+            background-color: darkslategray;
+            z-index: -1;
+        }
+
+        span:hover~div:nth-of-type(5) {
+            top: calc(50% - 7vh);
+            left: calc(50% - 13vh);
+            width: 7vh;
+            height: 9vh;
+            transform: translate(-50%, -50%);
+            background-color: orange;
+            z-index: 2;
+        }
+
+        span:hover~div:nth-of-type(6) {
+            top: calc(50% - 7vh);
+            left: calc(50% + 13vh);
+            width: 11vh;
+            height: 9vh;
+            transform: translate(-50%, -50%);
+            background-color: orange;
+            z-index: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <span>BUILD A HOUSE</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
