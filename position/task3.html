@@ -1,0 +1,72 @@
+<!-- Zadanie 3 - Pobierz plik -->
+<!--
+1. Div z klasą profile (div.profile w którym jest zdjęcie, nazwisko i tekst) wyśrodkuj za pomocą margin i daj mu  szerokość 800px. Nie określaj jego wysokości.
+2. Zmień grafikę z prostokątnej na okrąglą za pomocą właściwości border-radius. Eksperymentuj z procentami i pikselami. Dodaj padding 20px do grafiki z każdej strony.
+3. Pozycjonuj (właściwość position) div.answer wewnątrz div.profile.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rozmowa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile {
+            margin: 40px auto;
+            width: 800px;
+            position: relative;
+            background-color: #ddd;
+            height: 200px;
+            /* 160px rozmiar kota + 20px na gorze + 20px na dole*/
+        }
+
+        .avatar {
+            position: absolute;
+            border-radius: 50%;
+            /*            padding: 20px;*/
+            top: 20px;
+            left: 20px;
+        }
+
+        .answer {
+            position: absolute;
+            left: 220px;
+            top: 20px;
+            font-family: arial;
+            /*
+padding-right: 60px;
+padding-left: 220px;
+padding-top: 20px;
+}
+*/
+
+            h1 {
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas temporibus ad officiis fugiat, amet. Aliquid non
+        atque voluptates aspernatur esse numquam est eveniet ratione eimilique, porro, nihil vero distinctio illum.
+        Modi accusamus sit labore fuga nihil numqi</p>
+    <div class="profile">
+        <img class="avatar" src="cat.jpg" alt="kot">
+        <div class="answer">
+            <h1 class="name">Jan Nowak</h1>
+            <p class="sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, unde sapiente aliquid
+                alias vitae et laborum laudantium quaerat in possimus a sequi quidem, beatae ea quod maxime. Numquam,
+                tempore necessitatibus.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

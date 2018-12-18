@@ -1,0 +1,70 @@
+<!--
+- zmień domyślną wartość <a> inline na inline-block
+- usuń podkreślenie, ustaw kolor fonta na biały, określ rozmiar fonta na 40px,
+- ustaw margines wewnętzny (padding) w przycisku na 20px z góry i z dołu 60px z prawej i 100px z lewej.
+- dodaj grafikę emoticon1.png jako obrazek tła, umieść ją w odpowiednim miejscu. Ps. grafika jest w tym samym folderze co plik.
+- po najechaniu na przycisk wymień w nim grafikę tła na emotikon2.png
+- kolor tła przycisku: cornflowerblue
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Przyciski</title>
+    <style>
+        /*    Określ własciwości przycisku*/
+
+
+
+        a.first {
+
+            display: inline-block;
+            /* zajmuje miejsca tyle ile potrzebuje, atomiast block zajmuje 100% */
+            text-decoration: none;
+            color: white;
+            font-size: 40px;
+            padding: 20px 60px 20px 100px;
+            background-color: cornflowerblue;
+            background-image: url("emoticon1.png");
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            transition: 0.8s;
+
+        }
+
+        a.first:hover {
+            background-image: url("emoticon2.png");
+        }
+
+        a.second {
+
+            display: inline-block;
+            /* zajmuje miejsca tyle ile potrzebuje, atomiast block zajmuje 100% */
+            text-decoration: none;
+            color: white;
+            font-size: 40px;
+            padding: 20px 60px 20px 100px;
+            background-color: cornflowerblue;
+            background-image: url("emoticons.png");
+            background-repeat: no-repeat;
+            background-position: 15px 5px;
+
+            transition: 1s;
+        }
+
+        a.second:hover {
+            background-position: 15px -73px;
+            background-color: darkolivegreen;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a class="first" href="#">Przycisk</a>
+    <a class="second" href="#">Przycisk</a>
+</body>
+
+</html>
