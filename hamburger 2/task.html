@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .burger {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            /* background-color: gray; */
+            width: 60px;
+            height: 45px;
+        }
+
+        /* .burger.active {
+            transform: rotate(-90deg);
+        } */
+
+        .burger span {
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            background-color: black;
+            left: 0;
+            transition: top .1s .1s, bottom .1s .1s, opacity .1s .1s, transform .1s .2s;
+            /* transition: all .2s 0 ease; */
+        }
+
+        .burger span:nth-child(1) {
+            top: 0;
+        }
+
+        .burger.active span:nth-child(1) {
+            top: calc(50% - 5px);
+            transform: rotate(45deg);
+        }
+
+        .burger span:nth-child(2) {
+            top: calc(50% - 5px);
+        }
+
+        .burger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger span:nth-child(3) {
+            bottom: 0;
+        }
+
+        .burger.active span:nth-child(3) {
+            top: calc(50% - 5px);
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <script>
+        const ico = document.querySelector(".burger")
+        ico.addEventListener("click", function () {
+            ico.classList.toggle("active");
+        })
+
+
+        // jQuery - to samo co wyżej za pomocą blibliotki jQuery
+        // $('.burger').on('click', function () {
+        //    $(this).toggleClass('active');
+        //   })
+    </script>
+</body>
+
+</html>
